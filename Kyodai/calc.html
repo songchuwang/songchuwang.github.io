@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="F:\Kyodai\Mobile\app\reset.css">
+  <style>
+    body {
+      --rem: 37.5;
+    }
+    .header {
+      width: 100%;
+      height: calc(40/var(--rem) * 1rem);
+      background-color: red;
+      padding-left: calc(23/var(--rem) * 1rem);
+      box-sizing: border-box;
+    }
+
+    .header-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      white-space: nowrap;
+
+    }
+
+    .header-item {
+      color: #ffcdce;
+      font-size: calc(16/var(--rem) * 1rem);
+      margin-right: calc(20/var(--rem) * 1rem);
+      line-height: calc(40/var(--rem) * 1rem);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <ul class="header-nav">
+      <li class="header-item">推荐</li>
+      <li class="header-item">新闻</li>
+      <li class="header-item">娱乐</li>
+      <li class="header-item">体育</li>
+      <li class="header-item">财经</li>
+      <li class="header-item">图片</li>
+    </ul>
+  </div>
+  <script>
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+
+    let htmlDom = document.getElementsByTagName('html')[0];
+
+    htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+
+    //动态修改fontsize
+    window.addEventListener('resize', (e) => {
+      let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+    })
+  </script>
+</body>
+
+</html>

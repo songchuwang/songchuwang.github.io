@@ -1,0 +1,24 @@
+@function px2rem($px) {
+    $rem: 37.5px;
+    @return ($px/$rem)+rem;
+}
+
+.header {
+    height: px2rem(40px);
+    width: 100%;
+    background-color: red;
+    padding-left: px2rem(23px);
+    box-sizing: border-box;
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        white-space: nowrap;
+        .header-item {
+            color: #ffcdce;
+            font-size: px2rem(16px);
+            margin-right: px2rem(20px);
+            line-height: px2rem(40px);
+        }
+    }
+}

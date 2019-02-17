@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Link Game之英雄杀</title>
+  <link rel="stylesheet" href="">
+  <style>
+    /* 
+    要实现移动端自适应效果，必须捡起之前学过的物理像素比的知识
+     */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      margin-right: 100px;
+      width: 100%;
+    }
+
+    .card {
+      position: relative;
+      line-height: 280px;
+      border-radius: 10px;
+      /* border: 1px solid #FFCDD1; */
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+      transition: all linear .5s;
+      text-align: center;
+      transform-style: preserve-3d;
+      /* text-indent: -9999px; */
+    }
+
+    .card,
+    .front,
+    .back {
+      width: 200px;
+      height: 280px;
+      border-radius: 10px;
+    }
+
+    .front,
+    .back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      backface-visibility: hidden;
+    }
+
+    .front {
+      background-image: url('./img/back.jpg');
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+
+    .back,
+    .front {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .wrapper{
+      margin: 20px auto;
+      width: 600px;
+      height: 20px;
+      background-color: #f6e6e6;
+      border-radius: 5px;
+
+    }
+    .inner{
+      width: 100%;
+      max-width: 100%;
+      height: 20px;
+      background-image: linear-gradient(270deg, #ff9c31 1%, #f55 100%);
+      border-radius: 5px;
+    }
+    .time{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="inner"></div>
+  </div>
+  <section id="container"></section>
+  <script src="./js/index.js"></script>
+  <!-- <script src="./js/mobile.js"></script> -->
+
+</body>
+
+</html>
