@@ -1,0 +1,231 @@
+.skill-title{
+  font-size: 22px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.skill-docs{
+  /* width: 50%; */
+  box-sizing: border-box;
+  /* float: right; */
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%,-50%);
+
+}
+
+.skill-docs p{
+  padding: 20px 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.path {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  float: left;
+  /* background-color: #BC7BB5; */
+  border-radius: 150px;
+  border: 4px dotted #EDE7F6;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  transition: all 1s ease-in-out;
+  box-sizing: border-box;
+}
+
+.inner-path{
+  width: 160px;
+  height: 160px;
+  border: 4px dotted #EDE7F6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -80px;
+  border-radius: 80px;
+  box-sizing: border-box;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  position: absolute;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.avatar1 {
+  animation: spin1 12s infinite linear;
+  top: 0%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  background-color:rgba(76,157,160,.8);
+}
+
+.avatar2 {
+  top: 100%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  animation: spin2 12s infinite linear;
+  background-color:rgba(83,44,20, .8);
+}
+
+.avatar3 {
+  animation: spin3 12s infinite linear;
+  top: 50%;
+  left: 0%;
+  margin-top: -25px;
+  margin-left: -25px;
+  background-color:rgba(10,79,57, .8);
+}
+
+.avatar4 {
+  top: 50%;
+  left: 100%;
+  margin-top: -25px;
+  margin-left: -25px;
+  animation: spin4 12s infinite linear;
+  background-color:rgba(193,131,106,0.8);
+}
+
+.inner_avatar{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  text-align: center;
+
+}
+.inner_avatar1{
+  animation: inner_spin1 10s infinite linear;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: rgba(66,66,66,0.8);
+
+}
+.inner_avatar2{
+  animation: inner_spin2 10s infinite linear;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: rgba(238,215,163,0.8);
+
+}
+.inner_avatar3{
+  animation: inner_spin3 10s infinite linear;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: rgba(171,209,220,0.8);
+
+}
+.inner_avatar4{
+  animation: inner_spin4 10s infinite linear;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: rgba(147,147,189,0.8);
+
+}
+/* 内圈动画 */
+@keyframes inner_spin1{
+  from{
+    transform: translate(50%,100px) rotate(1turn) translate(-50%,-100px) translate(50%,50%) rotate(0turn) translate(-50%,-50%)
+  }
+  to{
+    transform: translate(50%,100px) rotate(0turn) translate(-50%,-100px) translate(50%,50%) rotate(1turn) translate(-50%,-50%)
+  }
+}
+@keyframes inner_spin2 {
+  from {
+    transform: translate(100px, 62.5%) rotate(1turn) translate(-100px, -62.5%) translate(50%, 50%) rotate(0turn) translate(-50%, -50%)
+  }
+
+  to {
+    transform: translate(100px, 62.5%) rotate(0turn) translate(-100px, -62.5%) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+  }
+}
+@keyframes inner_spin3{
+    from {
+    transform: translate(50%, -60px) rotate(1turn) translate(-50%, 60px) translate(50%, 50%) rotate(0turn) translate(-50%, -50%)
+  }
+
+  to {
+    transform: translate(50%, -60px) rotate(0turn) translate(-50%, 60px) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+  }
+}
+@keyframes inner_spin4{
+ from {
+    transform:
+      translate(-60px, 50%) rotate(1turn) translate(60px, -50%) translate(50%, 50%) rotate(0turn) translate(-50%, -50%)
+  }
+
+  to {
+    transform: translate(-60px, 50%) rotate(0turn) translate(60px, -50%) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+  }
+}
+/* end 内圈动画 */
+
+/* 外圈动画 */
+@keyframes spin1 {
+  from {
+    transform: translate(50%, 175px) rotate(0turn) translate(-50%, -175px) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+  }
+
+  to {
+    transform: translate(50%, 175px) rotate(1turn) translate(-50%, -175px) translate(50%, 50%) rotate(0turn) translate(-50%, -50%);
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: translate(50%, -125px) rotate(0turn) translate(-50%, 125px) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+  }
+
+  to {
+    transform: translate(50%, -125px) rotate(1turn) translate(-50%, 125px) translate(50%, 50%) rotate(0turn) translate(-50%, -50%)
+  }
+}
+
+@keyframes spin3 {
+  from {
+    transform: translate(175px, 58.3333%) rotate(0turn) translate(-175px, -58.3333%) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+  }
+
+  to {
+    transform: translate(175px, 58.3333%) rotate(1turn) translate(-175px, -58.3333%) translate(50%, 50%) rotate(0turn) translate(-50%, -50%)
+  }
+}
+
+@keyframes spin4 {
+  from {
+    transform:
+      translate(-125px, 50%) rotate(0turn) translate(125px, -50%) translate(50%, 50%) rotate(1turn) translate(-50%, -50%)
+  }
+
+  to {
+    transform: translate(-125px, 50%) rotate(1turn) translate(125px, -50%) translate(50%, 50%) rotate(0turn) translate(-50%, -50%)
+  }
+}
+/* end 外圈动画 */

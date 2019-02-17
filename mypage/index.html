@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>宋楚望的个人网站</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./style/about.css">
+  <link rel="stylesheet" href="./style/skill.css">
+  <link rel="stylesheet" href="./style/exper.css">
+  <link rel="stylesheet" href="./style/works.css">
+  <link rel="stylesheet" href="./style/contact.css">
+  <link rel="stylesheet" href="./style/scrollScreen.css">
+  <style>
+    body {
+      font-family: "Helvetica Neue",
+        Helvetica,
+        Arial,
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "Heiti SC",
+        "Microsoft YaHei",
+        "WenQuanYi Micro Hei",
+        sans-serif;
+    }
+
+    #home {
+      background: url('./img/header-background.jpg');
+      background-size: 100%;
+      background-size: cover;
+      background-position-x: 50%;
+      /* background: #87b0a5; */
+    }
+
+    .nav {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: 200px;
+      z-index: 100;
+    }
+
+    .nav li {
+      margin-top: 8px;
+      padding: 5px 10px;
+      font-size: 16px;
+      transition: all .25s ease-in-out;
+      cursor: pointer;
+    }
+
+    .nav li:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="main">
+      <!-- nav -->
+      <section class="nav">
+        <ul>
+          <li class="link">
+            <span>首页</span>
+          </li>
+          <li class="link">
+            关于我
+          </li>
+          <li class="link">技术栈</li>
+          <li class="link">经历</li>
+          <li class="link">作品集</li>
+          <li class="link">联系我</li>
+        </ul>
+      </section>
+      <!-- end of nav -->
+      <div id="home" class="page">
+        <div class="home-body">
+          <img src="./img/head.jpg" class="myself">
+          <p class="home-motto">千里之行，始于足下！</p>
+          <hr class="home-hr">
+          <section class="home-about">
+            <p class="home-name">我是宋楚望</p>
+            <p class="home-introduce">一名前端开发工程师</p>
+            <p class="home-contact">3302295966@qq.com</p>
+          </section>
+        </div>
+      </div>
+      <!-- end of home -->
+      <div id="about" class="page">
+        <p class="about-title">关于我</p>
+        <ul class="about-info">
+          <li>
+            <img src="./img/i_age.svg" alt="">
+            <span>年龄/22岁</span>
+          </li>
+          <li>
+            <img src="./img/i_edu.svg" alt="">
+            <span>学历/本科</span>
+          </li>
+          <li>
+            <img src="./img/i_site.svg" alt="">
+            <span>坐标/长沙</span>
+          </li>
+          <li>
+            <img src="./img/i_status.svg" alt="">
+            <span>状态/寻找工作</span>
+          </li>
+        </ul>
+        <div class="about-docs">
+          <p>三年互联网经验,两年半全职前端开发经验</p>
+          <p>熟悉MV*开发,深谙自动化,模块化开发之道</p>
+          <p>高效的自学能力,具备独立分析解决问题能力</p>
+          <p>强烈的自我驱动力,代码强迫症患者</p>
+        </div>
+      </div>
+      <!-- end of about -->
+      <div id="skill" class="page">
+        <p class="skill-title">技能栈</p>
+        <section class="skill-docs">
+          <p>熟练使用angularJs1.x及各种类库的指令封装</p>
+          <p>常驻PC/APP/微信三平台前端研发</p>
+          <p>擅长组件/插件开发，能脱离库书写JS代码</p>
+          <p>编码常思其健壮性，扩展性，维护性</p>
+        </section>
+        <div class="path">
+          <div class="avatar avatar1">webpack</div>
+          <div class="avatar avatar2">css3</div>
+          <div class="avatar avatar3">jQuery</div>
+          <div class="avatar avatar4">nodejs</div>
+          <div class="inner-path">
+            <div class="inner_avatar inner_avatar1">sass</div>
+            <div class="inner_avatar inner_avatar2">git</div>
+            <div class="inner_avatar inner_avatar3">es6</div>
+            <div class="inner_avatar inner_avatar4">vue</div>
+          </div>
+        </div>
+      </div>
+      <div id="experience" class="page">
+        <p class="exper-title">经历</p>
+        <div id="exper-wrap">
+          <div class="banner">
+            <div class="banner-img">
+              <!-- <div class="slide"> -->
+                  <img src="./img/slide8.jpg" width="800px" height="472px" alt="轮播图1">
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner-img">
+              <!-- <div class="slide"> -->
+                  <img src="./img/slide3.jpg" width="800px" height="472px" alt="轮播图1">
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner-img">
+              <!-- <div class="slide"> -->
+                  <img src="./img/slide6.jpg" width="800px" height="472px" alt="轮播图1">
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner-img">
+              <img src="./img/slide7.jpg" width="800px" height="472px" alt="轮播图1">
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner-img">
+              <img src="./img/slide2.jpg" width="800px" height="472px" alt="轮播图1">
+            </div>
+          </div>
+
+          <div class="tab">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="prev">
+          </div>
+          <div class="next"></div>
+        </div>
+
+      </div>
+      <div id="works" class="page">
+        <p class="works-title">作品集</p>
+        <div class="works-wrap">
+          <div class="works-line">
+            <div class="wrapper">
+              <div class="item">
+                <img src="./img/contact.png" />
+                <span class="information">
+                  <a href="https://songchuwang.github.io/JDFinance/index#/">
+                    <strong>移动端京东金融</strong> 基于Vue.js+组件化开发的移动端项目.</a>
+                </span>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item">
+                <img src="./img/chimpified.jpeg" />
+                <span class="information">
+                  <a href="https://songchuwang.github.io/Travel/index#/">
+                    <strong>去哪儿网项目</strong> 基于Vue.js+Vue-router+Vuex的移动端项目.</a>
+                </span>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item">
+                <img src="./img/yotpo.jpeg" />
+                <span class="information">
+                  <a href="#"><strong>电商网站购物车模块</strong> 一个电商购物车项目</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="works-line">
+            <div class="wrapper">
+              <div class="item">
+                <img src="./img/olark.png" />
+                <span class="information">
+                  <a href="file:///F:/gityxs/Kyodai/LinkGame.html">
+                    <strong>卡牌游戏之英雄杀</strong>一款类似消消乐的卡牌游戏.</a>
+
+                </span>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item">
+                <img src="./img/jilt.png" />
+                <span class="information">
+                  <strong>Jilt</strong> Jilt lets you easily and effectively follow up with customers who have
+                  abandoned their orders.
+                </span>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item">
+                <img src="./img/ordoro.png" />
+                <span class="information">
+                  <strong>Ordoro</strong> Automate your backoffice: aggregate orders, manage inventory, print shipping
+                  labels.
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="page">
+        <p class="contact-title">联系我</p>
+        <p class="contact-header">
+          <span>灵感</span>
+          <span>代码</span>
+          <span>梦想</span>
+          <span>未来</span>
+        </p>
+        <div class="contact-docs">
+          <p>注重效率，偏爱敏捷开发</p>
+          <p>喜欢尝试，期待新鲜事物</p>
+          <p>前端即兴趣，兴趣即未来</p>
+          <p>行路有良友，便是捷径</p>
+          <p>带上我吧，一起看到更大的世界</p>
+        </div>
+        <ul class="contact-icon">
+          <li>
+            <img src="./img/s_github.svg" alt="">
+          </li>
+          <li>
+            <img src="./img/s_blog.svg" alt="">
+          </li>
+          <li>
+            <img src="./img/s_wb.svg" alt="">
+          </li>
+          <li>
+            <img src="./img/s_zh.svg" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="./jquery.js"></script>
+  <script src="./js/animate.js"></script>
+  <script src="./js/scrollScreen.js"></script>
+  <script>
+    // var slide = document.querySelectorAll('.slide');
+    // var slide_to = document.querySelectorAll('.slide-to');
+    // var slide_index = document.querySelectorAll('.slide-index');
+    // console.log(slide);
+    // console.log(slide_to);
+    // for (let i = 0; i < slide_to.length; i++) {
+    //   slide_to[i].addEventListener('click', () => {
+    //     for (let j = 0; j < slide_to.length; j++) {
+    //       slide[j].style.zIndex = 0;
+    //       slide_index[j].classList.remove('slide-index-show');
+    //     }
+    //     slide[i].style.zIndex = 100;
+    //     slide_index[i].classList.add('slide-index-show');
+    //   })
+    // }
+
+
+
+
+    var oBody = document.getElementsByTagName("body")[0];
+    var aBanner = document.getElementsByClassName("banner");
+    var aSpan = document.getElementsByClassName("tab")[0].getElementsByTagName("span");
+    var oNext = document.getElementsByClassName("next")[0];
+    var Oprev = document.getElementsByClassName("prev")[0];
+    var Oon = document.getElementsByClassName("on")[0];
+    var exp_wrap = document.querySelector('#exper-wrap');
+    //初始化让第一张图片显示，和第一个原点显示
+    aBanner[0].style.opacity = "1";
+    aSpan[0].className = "on";
+
+    var num = 0;
+    for (var i = 0; i < aSpan.length; i++) {
+      aSpan[i].index = i;
+      aSpan[i].onclick = function () { //点击小圆点图片相对应的进行切换
+        for (var j = 0; j < aSpan.length; j++) {
+          num = this.index;
+          aSpan[j].className = "";
+          aBanner[j].style.opacity = "0";
+        }
+        aSpan[num].className = "on";
+        aBanner[num].style.opacity = "1";
+      }
+      oNext.onclick = function () { //按下图片切换到后一张
+        for (var j = 0; j < aSpan.length; j++) {
+          if (aSpan[j].className == "on") {
+            aSpan[j].className = "";
+            aBanner[j].style.opacity = "0";
+            j++;
+            num++;
+            if (j > 4) {
+              j = 0;
+            }
+            aSpan[j].className = "on";
+            aBanner[j].style.opacity = "1";
+
+          }
+        }
+      }
+
+      Oprev.onclick = function () { //按下图片切换到前一张
+        for (var j = 0; j < aSpan.length; j++) {
+          if (aSpan[j].className == "on") {
+            aSpan[j].className = "";
+            aBanner[j].style.opacity = "0";
+            j--;
+            num--;
+            if (j < 0) {
+              j = 4;
+            }
+            aSpan[j].className = "on";
+            aBanner[j].style.opacity = "1";
+
+          }
+        }
+      }
+    }
+
+    function Time() { /*设置定时器运行的函数*/
+      num++;
+      if (num < 5) {
+        for (var j = 0; j < aSpan.length; j++) {
+          aSpan[j].className = "";
+          aBanner[j].style.opacity = "0";
+        }
+        aSpan[num].className = "on";
+        aBanner[num].style.opacity = "1";
+      } else {
+        num = -1;
+      }
+    }
+    clearInterval(timer);
+    var timer = setInterval("Time()", 2000); /*调用定时器*/
+
+    exp_wrap.onmouseover = function () { /*鼠标引入，清除定时器，轮播图停止*/
+      clearInterval(timer);
+    };
+    exp_wrap.onmouseout = function () { /*鼠标移出，重新调用定时器，轮播图开始*/
+      clearInterval(timer);
+      timer = setInterval("Time()", 2000);
+    };
+  </script>
+</body>
+
+</html>
