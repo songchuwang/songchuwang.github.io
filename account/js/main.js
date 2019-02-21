@@ -1,0 +1,3 @@
+Zepto(function($) {
+	hashChange();
+});

@@ -1,0 +1,41 @@
+@import "style";
+//边框颜色
+$border-color:#ddd;
+.main{
+    @include size();
+}
+.situation{
+    display: block;
+    font-weight: 700;
+    &:before{
+        content: "￥";
+    }
+}
+.finance{
+    @include size(100%,70px);
+    padding: 10px 0;
+    border-bottom: 1px solid $border-color;
+    li{
+        float: left;
+        @include size(33.33%);
+        text-align: center; 
+        font-size: 16px;
+        border-right: 1px solid $border-color;
+        &:last-child{
+            border-right: none;
+        }
+        .income{
+            @extend .situation;
+            color: #7fd2a9;
+        }
+        .payment{
+            @extend .situation;
+            color: #db6c63;
+        }
+        .balance{
+            @extend .situation;
+            color: #666;
+        }
+    }
+}
+

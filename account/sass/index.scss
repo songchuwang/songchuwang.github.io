@@ -1,0 +1,238 @@
+﻿@import "style";
+@import "statistics";
+@import "chart";
+//账目高度
+$li-height:80px;
+//收支状况
+%situation{
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.bill{
+	@include size();
+	li{
+		@include size(100%,80px);
+		position: relative;
+		line-height: 80px;
+		border-bottom: 1px dashed #a6baa9;
+		i{
+			@extend .icon;
+		}
+		.cate{
+			margin-left: 20px;
+			font-size: 18px;
+		}
+		.income{
+			@extend %situation;
+			color: #7fd2a9;
+			&:before{
+			    content: "+";
+			}
+		}
+		.payment{
+			@extend %situation;
+			color: #db6c63;
+			&:before{
+			    content: "-";
+			}
+		}
+		.date{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			line-height: normal;
+			color: #aaa;
+		}
+		&:nth-child(odd){
+			background-color: #fbfbfb;
+		}
+
+		.item{
+			position: absolute; 
+			z-index: 200; 
+			display: inline; 
+			width: 100%; 
+			height: 100%;
+			background-color: white; 
+			padding-left: 10px;
+		}
+
+		.edit{
+			position: absolute;
+			display:inline;
+			background-color: #db6c63;
+			height: 100%;
+			right: 0px;
+			z-index: 0;
+
+			i{
+				width: 50%;
+			}
+		}
+	}	
+}
+.nobill-msg{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    a{
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        color: #fff;
+        background-color: #8ed498;
+        border-radius: 5px;
+    }
+    
+    
+}
+.header.edit-style{
+    background-color: #eee;
+    color: #999;
+}
+//顶部固定栏样式
+.header{
+    @include size(100%,50px);
+    position: fixed;
+    line-height: 50px;
+    text-align: center;
+    background-color: $bg-color;
+    color: #fff;
+    z-index: 999;
+    span{
+        font-size: 18px;
+    }
+    .fa{
+        @include v-middle();
+        font-size: 30px;
+    }
+    .header-left{
+        left: 10px;
+    }
+    .header-right{
+        right: 10px;
+    }
+    .btn-publish{
+        @include size(50px,30px);
+        @include v-middle();    
+        line-height: 30px;;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        background-color: #8ed498;
+        color: #fff;
+    }
+    //下拉菜单样式
+    .menu{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        line-height: 50px;
+        font-size: 16px;
+        color: #fff;
+        background-color: rgba(142,212,152,.8);
+        border-top: 1px solid #afe0b6;
+        overflow: hidden;
+        z-index: 999;
+        .on{
+            color: #fff;
+            font-weight: 700;
+        }
+        li{
+            float: left;
+            margin-left: 10px;
+            color: rgba(255,255,255,.6);
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        a{
+            color: inherit;
+        }
+    }
+}
+#enterBillPage,#edit-wrapper{
+    display: none;
+}
+//编辑页面样式
+#edit-wrapper{
+    @include size();
+    .icon{
+        @include size(40px,40px);
+        line-height: 40px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #fff; 
+    }
+    .row{
+        @include size();
+        padding: 10px;
+        border-bottom: 1px solid $border-color;    
+        li{
+            @include size(45px);
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+            i{
+                @extend .icon; 
+            }
+            span{
+                font-size: 14px;
+                color: $font-color;
+            }    
+        }
+    }
+}
+//计算器样式
+.calc{
+    display: none;
+    @include size();
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    .keyboard{
+        @include size();
+        background-color: #eee;
+        td{
+            @include size(25%,60px);
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid $border-color;
+        }
+        .on{
+            background-color: #ddd;
+        }
+    }
+}
+.input-area{
+    @include size();
+    position: relative;
+    padding: 20px 10px;
+    background-color: #eee;
+    border-top: 1px solid $border-color;
+    i{
+        @extend .icon;
+        margin-right: 10px;
+    }
+    span{
+        font-size: 18px;
+    }
+    .txt-amount{
+        @include size(50%,100%);
+        @include v-middle();
+        right: 10px;
+        font-size: 18px;
+        text-align: right;
+        background-color:inherit;
+        color: #888;
+        border: none;
+    }
+}

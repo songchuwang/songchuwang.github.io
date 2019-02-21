@@ -1,0 +1,130 @@
+.fa-usd {
+  background-color: #93dcb8; }
+
+.fa-female {
+  background-color: #f39f61; }
+
+.fa-coffee {
+  background-color: #fe8988; }
+
+.fa-home {
+  background-color: #c5b298; }
+
+.fa-plane {
+  background-color: #6fb2de; }
+
+.fa-shopping-cart {
+  background-color: #d9584b; }
+
+.fa-heart {
+  background-color: #fdc403; }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  color: #fff; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  line-height: 50px;
+  text-align: center;
+  background-color: #8ED498;
+  color: #fff;
+  z-index: 999; }
+  .header span {
+    font-size: 18px; }
+  .header .fa {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 30px; }
+  .header .header-left {
+    left: 10px; }
+  .header .header-right {
+    right: 10px; }
+  .header .btn-publish {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    line-height: 30px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8ed498;
+    color: #fff; }
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(142, 212, 152, 0.8);
+  border-top: 1px solid #afe0b6;
+  overflow: hidden;
+  z-index: 999; }
+  .menu .on {
+    color: #fff;
+    font-weight: 700; }
+  .menu li {
+    float: left;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.6); }
+    .menu li:hover {
+      cursor: pointer; }
+  .menu a {
+    color: inherit; }
+
+.view {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: none;
+  z-index: 99;
+  width: 100%;
+  height: 100%; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  form {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+.current-view {
+  display: block;
+  z-index: 100; }
+
+.out {
+  -webkit-animation: fadeOut 0.5s;
+  animation: fadeOut 0.5s; }
+
+/*# sourceMappingURL=style.css.map */

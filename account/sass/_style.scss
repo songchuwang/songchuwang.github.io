@@ -1,0 +1,98 @@
+@charset "utf-8";
+//设置元素宽高
+@mixin size($width:100%,$height:auto){
+    width: $width;
+    height: $height;
+}
+//使用绝对定位实现垂直居中
+@mixin v-middle(){
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+//头部背景颜色
+$bg-color: #8ED498;
+//头部字体颜色
+$font-color: #999;
+//边框颜色
+$border-color:#ddd;
+//头部高度
+$hd-height:50px;
+body{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+a{
+    color: inherit;
+    &:vistied{
+        color: inherit;
+    }
+}
+.fa-usd{
+    background-color: #93dcb8;
+}
+.fa-female{
+    background-color: #f39f61;
+}
+.fa-coffee{
+    background-color: #fe8988;
+}
+.fa-home{
+    background-color: #c5b298;
+}
+.fa-plane{
+   background-color: #6fb2de;
+}
+.fa-shopping-cart{
+   background-color: #d9584b;   
+}
+.fa-heart{
+    background-color: #fdc403;
+}
+.icon{
+    @include size(40px,40px);
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff; 
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.view{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+    z-index: 99;
+    @include size($height:100%);
+}
+@-webkit-keyframes fadeIn{
+    from {opacity:0;}
+    to  {opacity: 1;}
+}
+@keyframes fadeIn{
+    form {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fadeOut{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes fadeOut{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.view.current-view{
+   display: block;
+   z-index: 100;
+}
+.in{
+    $time:.4s;
+    -webkit-animation: fadeIn $time ease;
+    animation: fadeIn $time ease;
+}

@@ -1,0 +1,41 @@
+@import "style";
+//收支状况
+#statistics-view .situation{
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+}
+.list{
+    @include size();
+    dt{
+        height:40px;
+        padding-left: 10px;
+        line-height: 40px;
+        background-color: #eee;
+        font-size: 18px;
+    }
+    dd{
+        @include size($height:50px);
+        padding:0 20px;
+        line-height: 50px;
+        font-size: 16px;
+        border-bottom: 1px solid #ddd;
+        .income{
+            @extend .situation;
+            color: #7fd2a9;
+            &:before{
+                content: "+";
+            }
+        }
+        .payment{
+            @extend .situation;
+            color: #db6c63;
+            &:before{
+                content: "-";
+            }
+        }
+        &:nth-last-child(1){
+            border-bottom: none;
+        }
+    }
+}
